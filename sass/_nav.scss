@@ -87,11 +87,16 @@ nav {
 			cursor: pointer;
 			display: none;
 			position: absolute;
-			top: 15px;
+			top: 163px;
 			right: 30px;
-			margin-top: 148px;
+			
 			margin-right: 9px;
+			overflow: visible;
+			@include breakpoint($phone) {
+			  	top: 268px;
+			  }
 			#nav-icon {
+			  overflow: visible;	
 			  width: 40px;
 			  height: 25px;
 			  position: relative;
@@ -106,9 +111,7 @@ nav {
 			  -o-transition: .5s ease-in-out;
 			  transition: .5s ease-in-out;
 			  cursor: pointer;
-			  @include breakpoint($phone) {
-			  	top: 130px;
-			  }
+			  
 			}
 			#nav-icon span {
 			  display: block;

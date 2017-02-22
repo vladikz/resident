@@ -645,7 +645,8 @@ div {
 				.col-icon {
 					@include span(1);
 					@include breakpoint($tablet) {
-						@include span(2);
+						@include span(12);
+						text-align: center;
 					}
 					img {
 						max-width: 100%;
@@ -654,7 +655,9 @@ div {
 				.col-text {
 					@include span(5);
 					@include breakpoint($tablet) {
-						@include span(10);
+						@include span(12);
+						text-align: center;
+						margin-bottom: 2rem;
 					}
 					.col-title {
 						font-size: 1.2rem;
@@ -768,7 +771,8 @@ div {
 				.col-icon {
 					@include span(1);
 					@include breakpoint($tablet) {
-						@include span(2 first);
+						@include span(12);
+						text-align: center;
 					}
 					img {
 						max-width: 100%;
@@ -777,7 +781,9 @@ div {
 				.col-text {
 					@include span(5);
 					@include breakpoint($tablet) {
-						@include span(10 last);
+						@include span(12);
+						text-align: center;
+						margin-bottom: 2rem;
 					}
 					p {
 						padding: 1rem 2rem 1rem 2rem;
