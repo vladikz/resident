@@ -74,7 +74,8 @@ div {
 	@include container(1160px);
 	@include breakpoint($tablet) {
 		@include container(90%);
-	} 
+	}
+	overflow: visible; 
 }
 
 .pre-nav {
@@ -347,7 +348,7 @@ div {
 		}
 	}
 	.team {
-		padding-bottom: 3rem;
+		padding-bottom: 0rem;
 		.content-container {
 			padding: 1rem;
 			h2 {
@@ -361,6 +362,45 @@ div {
 				width: 100%;
 			}
 		}
+		.owl-stage {
+			overflow: hidden;
+		}
+		#team-carousel {
+			position: relative;
+			.item {
+				.left-item {
+					@include span(4);
+					padding: 1rem;
+					img {
+						max-width: 100%;
+					}
+				}
+				.right-item {
+					padding: 1rem;
+					@include span(8);
+					h4 {
+						font-size: 1.2rem;
+						padding-bottom: 0.5rem;
+					}
+					p {
+						font-size: 0.8rem;
+						padding-bottom: 0.5rem;
+					}
+				}
+			}
+		}
+			.prev {
+				position: absolute;
+				width: 30px;
+				left: 2%;
+				top: 40%;
+			}
+			.next {
+				position: absolute;
+				width: 30px;
+				right: 2%;
+				top: 40%;
+			}
 	}
 	.offer {
 		.content-container {

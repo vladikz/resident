@@ -24,4 +24,17 @@ $(document).ready(function() {
         }
     }
 })
+    $('#team-carousel').owlCarousel({
+        loop:true,
+      margin:0,
+      nav:true,
+      dots: false,
+      navText: ["<img src='../img/arrow-l.png' class='prev'>","<img src='../img/arrow-r.png' class='next'>"],
+      stagePadding: 0,
+      autoplay:true,
+      autoplayTimeout:3500,
+      autoplayHoverPause:true,
+      autoplaySpeed: 1000,
+      items:1
+    })
 });
