@@ -40,6 +40,7 @@ body {
 }
 p {
 	color: $font;
+	font-size: 0.8rem;
 }
 h2 {
 	text-transform: uppercase;
@@ -150,7 +151,7 @@ div {
 
 .post-nav {
 	@include span(10 first);
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 	@include breakpoint($tablet) {
 		display: none;
 	}
@@ -179,7 +180,7 @@ div {
 		height: 3px;
 		background-color: $blue;
 		display: block;
-		margin-top: 1rem;
+		margin-top: 0.5rem;
 	}
 }
 
@@ -188,7 +189,7 @@ div {
 		display: none;
 	}
 	@include span(2 last);
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 	text-align: right;
 	margin-bottom: 2rem;
 	i {
@@ -203,7 +204,7 @@ div {
 		height: 3px;
 		background-color: $blue;
 		display: block;
-		margin-top: 1rem;
+		margin-top: 0.5rem;
 	}
 }
 
@@ -275,7 +276,7 @@ div {
 		}
 	}
 	.story {
-		padding-bottom: 5rem;
+		padding-bottom: 1rem;
 		clear: both;
 		.content-container {
 			padding: 1rem;
@@ -1128,7 +1129,7 @@ footer {
 			padding-bottom: 1rem;
 		}
 		.col-4-cont {
-			margin-top: 2rem;
+			//margin-top: 2rem;
 			img {
 				max-width: 100%;
 				padding-bottom: 2rem;
@@ -1166,6 +1167,14 @@ footer {
 					position: relative;
 					height: 21px;
 					top: 4px;
+				}
+			}
+			a {
+				text-decoration: none;
+				i {
+					color: $ftr-logo;
+					font-size: 1.3rem !important;
+					margin: 0 5px;
 				}
 			}
 		}
